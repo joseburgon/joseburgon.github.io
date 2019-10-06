@@ -1010,7 +1010,7 @@ body.isScrolling #backToTop {
     left: -5px;
     width: 5px;
     height: 50%;
-    background-color: #f00;
+    background-color: #179ea8;
     z-index: 1;
 }
 
