@@ -1,2 +1,2 @@
 # joseburgon
- Web personal tipo portafolio
+ Personal portfolio web.
