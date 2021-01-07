@@ -1,51 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <!-- ==== Document Title ==== -->
-    <title>José Burgón - UI, Web adn Graphic Designer</title>
+    <title>José Burgón | Full-Stack Developer</title>
 
     <!-- ==== Document Meta ==== -->
-    <meta name="author" content="José Luis Burgón" />
-    <meta name="description" content="Personal Website" />
+    <meta name="author" content="José Burgón"/>
+    <meta name="description" content="Personal Website"/>
     <meta
-      name="keywords"
-      content="web designer, graphic designer, Designer, developer, web, ui, ux"
+            name="keywords"
+            content="developer, full-stack, backend, frontend, web designer, programmer, web, PHP, laravel, vue"
     />
 
     <!--  Essential META Tags -->
-    <meta property="og:title" content="José Burgón" />
-    <meta property="og:description" content="UI, Web and Graphic Desginer." />
-    <meta property="og:image" content="img/thumbnail-jb.jpg" />
-    <meta property="og:url" content="http://joseburgon.com/" />
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:title" content="José Burgón"/>
+    <meta property="og:description" content="Full-Stack Developer"/>
+    <meta property="og:image" content="../img/thumbnail-jb.jpg"/>
+    <meta property="og:url" content="http://joseburgon.com/"/>
+    <meta name="twitter:card" content="summary_large_image"/>
 
     <!-- ==== Favicon ==== -->
-    <link rel="icon" href="favicon.png" type="image/png" />
+    <link rel="icon" href="favicon.png" type="image/png"/>
 
     <!--  Imagen para vista previa de la URL -->
-    <link rel="image_src" href="img/thumbnail-jb.jpg" />
+    <link rel="image_src" href="img/thumbnail-jb.jpg"/>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-178186425-1"
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-178186425-1"
     ></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'UA-178186425-1');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-178186425-1');
     </script>
-  </head>
-  <body>
-    <script type="text/javascript">
-      window.onload = function () {
+</head>
+<body>
+<script type="text/javascript">
+    window.onload = function () {
         // Detecta el lenguaje del navegador
         var lgNav = window.navigator.language || navigator.browserLanguage;
 
@@ -55,19 +57,19 @@
         // alert ("The language is: " + lg);
 
         if (lg == 'es') {
-          // detecta y abre idiona español
-          //window.location.replace("./es");
-          window.location.href = './es';
+            // detecta y abre idiona español
+            //window.location.replace("./es");
+            window.location.href = './es';
         } else if (lg == 'en') {
-          // detecta y abre idiona ingles
-          //window.location.replace("./en");
-          window.location.href = './en';
+            // detecta y abre idiona ingles
+            //window.location.replace("./en");
+            window.location.href = './en';
         } else {
-          // si no es ninguna abre idiona ingles
-          //window.location.replace("./en");
-          window.location.href = './en';
+            // si no es ninguna abre idiona ingles
+            //window.location.replace("./en");
+            window.location.href = './en';
         }
-      };
-    </script>
-  </body>
+    };
+</script>
+</body>
 </html>
