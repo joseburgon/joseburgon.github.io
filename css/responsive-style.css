@@ -176,6 +176,10 @@ WE MAY RELEASE FUTURE UPDATES SO IT WILL OVERWRITE THIS FILE. IT'S BETTER AND SA
     .header--navbar .navbar-collapse {
         max-width: none;
     }
+
+    .about--block .info {
+        font-size: 14px;
+    }
 }
 
 /* 1.4. SMALL DEVICES, SMARTPHONES */
