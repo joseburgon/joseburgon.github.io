@@ -1,0 +1,148 @@
+
+/*———————— HEADLINE THEME VARIABLES ————————*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+
+:root {
+    /* Colours variables */
+    --color-primary: #212121;
+    --color-secondary: #F9FCFC;
+    --color-accent: #777777;
+    --color-background: #F9FCFC;
+    --color-text-default: #212121;
+    --color-white: #FFFFFF;
+    --color-black: #212121;
+
+    /* Fonts variables  */
+    --body-font: 'Inter', sans-serif;
+}
+
+
+/*———————— STYLES RESET ————————*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: var(--color-text-default);
+    text-decoration-color: var(--color-accent);
+    text-decoration-thickness: .12rem;
+    text-underline-offset: .1rem;
+    line-height: 1.5rem;
+}
+
+a:hover {
+    color: var(--color-accent);
+}
+
+
+/*———————— MAIN CONTENT ————————*/
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    font-family: var(--body-font);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+main {
+    max-width: 30rem;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+/*———————— CARD SECTION ————————*/
+
+.card {
+    padding: 2rem;
+}
+
+/*———————— AVATAR SECTION ————————*/
+
+.card__avatar {
+    margin-bottom: 2rem;
+    border-radius: 50%;
+    animation: card 2s ease-out;
+}
+
+.card__avatar-img {
+    max-width: 10rem;
+    border-radius: 50%;
+    border: var(--color-accent) solid .375rem;
+}
+
+/*———————— INFO SECTION ————————*/
+
+.card__info {
+    margin-bottom: 2rem;
+    position: relative;
+    animation: card 2s ease-out;
+}
+
+.card__info-description {
+    margin-bottom: 1rem;
+}
+
+.card__info-sentence {
+    font-weight: 400;
+    animation: socials 2s ease-out;
+}
+/*———————— SOCIALS SECTION ————————*/
+
+.card__socials {
+    animation: socials 3s ease-out;
+}
+
+
+/*———————— ANIMATIONS ————————*/
+
+
+@keyframes card {
+    0% {
+        opacity: 0;
+        transform: translateY(-.5rem);
+    }
+    20% {
+        opacity: 0;
+        transform: translateY(-.5rem);
+    }
+    80% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes socials {
+    0% {
+        opacity: 0;
+        transform: translateY(-.5rem);
+    }
+    40% {
+        opacity: 0;
+        transform: translateY(-.5rem);
+    }
+    80% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
