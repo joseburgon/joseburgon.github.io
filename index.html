@@ -1,75 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose Burgon | Full-Stack Developer</title>
 
-    <!-- ==== Document Title ==== -->
-    <title>José Burgón | Full-Stack Developer</title>
-
-    <!-- ==== Document Meta ==== -->
-    <meta name="author" content="José Burgón"/>
+    <!-- Standard SEO -->
+    <meta name="author" content="Jose Burgon"/>
     <meta name="description" content="Personal Website"/>
     <meta
             name="keywords"
             content="developer, full-stack, backend, web, software, PHP, laravel, javascript, vue, html"
     />
 
-    <!--  Essential META Tags -->
-    <meta property="og:title" content="José Burgón"/>
-    <meta property="og:description" content="Full-Stack Developer"/>
-    <meta property="og:image" content="../img/thumbnail-jb.jpg"/>
-    <meta property="og:url" content="http://joseburgon.com/"/>
-    <meta name="twitter:card" content="summary_large_image"/>
+    <!-- Styles (CSS, Icons, CDNs) -->
+    <link rel="stylesheet" href="./styles.css">
 
     <!-- ==== Favicon ==== -->
-    <link rel="icon" href="favicon.png" type="image/png"/>
+    <link rel="icon" href="assets/favicon.png" type="image/png"/>
 
     <!--  Imagen para vista previa de la URL -->
     <link rel="image_src" href="img/thumbnail-jb.jpg"/>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=UA-178186425-1"
-    ></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+    <!-- Facebook OpenGraph -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="en_ca"/>
+    <meta property="og:url" content="http://joseburgon.com/"/>
+    <meta property="og:title" content="Jose Burgon"/>
+    <meta property="og:description" content="Full-Stack Developer"/>
+    <meta property="og:image" content="../img/thumbnail-jb.jpg"/>
+    <meta property="og:image:type" content="image/jpeg"/>
+    <meta property="og:site_name" content="Jose Burgon"/>
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-
-        gtag('config', 'UA-178186425-1');
-    </script>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="Jose Burgon"/>
+    <meta name="twitter:description" content="Full-Stack Developer"/>
+    <meta name="twitter:image" content="../img/thumbnail-jb.jpg"/>
 </head>
 <body>
-<script type="text/javascript">
-    window.onload = function () {
-        // Detecta el lenguaje del navegador
-        var lgNav = window.navigator.language || navigator.browserLanguage;
+<main>
+    <div class="container">
+        <div class="card">
+            <!-- AVATAR SECTION - START -->
+            <div class="card__avatar">
+                <img src="./assets/avatar.webp" alt="Profile avatar" class="card__avatar-img" width="150px"
+                     height="150px">
+            </div>
+            <!-- AVATAR SECTION - END -->
+            <!-- INFO SECTION - START -->
+            <div class="card__info">
+                <h1 class="card__info-name">Hello, I’m Jose Burgon.</h1>
+                <h2 class="card__info-description">A Full-Stack Developer with 5+ years of experience.</h2>
+                <p class="card__info-sentence">I build scalable web applications using:<br> PHP + Laravel + Javascript + Vue</p>
+            </div>
+            <!-- INFO SECTION - END -->
+            <!-- SOCIAL LINKS SECTION - START -->
+            <div class="card__socials">
+                <ul class="socials__links">
+                    <li class="socials-link">
+                        <a href="https://www.linkedin.com/in/joseburgon" target="_blank" title="LinkedIn">LinkedIn</a>
+                    </li>
+                    <li class="socials-link">
+                        <a href="https://github.com/joseburgon/" target="_blank" title="GitHub">GitHub</a>
+                    </li>
+                    <li class="socials-link">
+                        <a href="mailto:burgonjose@gmail.com" title="Get in touch">Get in touch</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- SOCIAL LINKS SECTION - END -->
+        </div>
+    </div>
+</main>
 
-        // Extrae las dos primeros datos
-        var lg = lgNav.substring(0, 2);
-
-        // alert ("The language is: " + lg);
-
-        if (lg == 'es') {
-            // detecta y abre idiona español
-            //window.location.replace("./es");
-            window.location.href = './es';
-        } else if (lg == 'en') {
-            // detecta y abre idiona ingles
-            //window.location.replace("./en");
-            window.location.href = './en';
-        } else {
-            // si no es ninguna abre idiona ingles
-            //window.location.replace("./en");
-            window.location.href = './en';
-        }
-    };
-</script>
 </body>
 </html>
